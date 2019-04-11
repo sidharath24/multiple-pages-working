@@ -23,9 +23,7 @@ namespace Multiple_Pages.Resources.layout
             SetContentView(Resource.Layout.page2);
             BackBtn = (Button)FindViewById(Resource.Id.BtnBack);
             WelcomeTv = (TextView)FindViewById(Resource.Id.TvWelcome);
-
             WelcomeTv.Text = "Hey " + MainActivity.UserNameET.Text + ". This is a new page";
-
             BackBtn.Click += delegate
             {
                 Intent intent = new Intent(this, typeof(MainActivity));
